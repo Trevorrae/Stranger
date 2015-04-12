@@ -1,0 +1,64 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Main_Layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#FFC0CB"
+    android:columnCount="1"
+    android:rowCount="4"
+    android:scrollbars="none" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:adjustViewBounds="true"
+        android:contentDescription="bla bla bla"
+        android:fitsSystemWindows="true"
+		android:src="@drawable/logo1" />
+
+    <Button
+        android:id="@+id/Button_Rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginTop="68dp"
+        android:layout_row="2"
+        android:background="#FFC0CB"
+        android:clickable="true"
+        android:text="Rules"
+        android:textColor="#7CFC00"
+        android:textColorHighlight="#7CFC00"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/Button_Help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="85dp"
+        android:layout_row="3"
+        android:background="#FFC0CB"
+        android:clickable="true"
+        android:text="Connect"
+        android:textColor="#7CFC00"
+        android:textColorHighlight="#7CFC00"
+        android:textSize="50sp" />
+
+    <com.facebook.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_row="1" 
+		facebook:confirm_logout="false"
+        facebook:fetch_user_info="true" />
+
+</GridLayout>
